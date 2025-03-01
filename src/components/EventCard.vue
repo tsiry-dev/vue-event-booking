@@ -5,13 +5,19 @@
     <p class="p-2">{{ description }}</p>
 
     <section class="flex justify-end">
-      <button @click="$emit('register')"
-        class="border border-gray-200 p-2 rounded-full m-2 hover:bg-gray-100 cursor-pointer">Register</button>
+      <RoundButton label="Register"  @click="$emit('register')" >
+        <pre>Register</pre>
+      </RoundButton>
     </section>
   </div>
 </template>
 
 <script setup>
+
+import RoundButton from '@/components/RoundButton.vue'
+
+defineEmits(['register']);
+
 
 defineProps({
   title: String,
@@ -19,7 +25,6 @@ defineProps({
   description: String,
 });
 
-defineEmits(['register']);
 </script>
 
 <style scoped></style>

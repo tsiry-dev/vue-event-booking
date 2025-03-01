@@ -5,7 +5,7 @@
 
     <div class="grid grid-cols-2 gap-5">
       <EventCard v-for="index in 8" :key="index" title="VueConf 2022" when="2022-10-20"
-        description="The community that focuses on the future of Vue.js." @register="console.log(index)"  />
+        description="The community that focuses on the future of Vue.js." @register="console.log('register')"  />
     </div>
   </main>
 </template>
