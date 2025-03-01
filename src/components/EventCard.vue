@@ -1,22 +1,28 @@
 <template>
-  <div class="bg-white rounded-lg hover:shadow-sm hover:translate-y-[-3px] duration-300">
-    <h3 class="border-b border-gray-200 p-2">{{ title }}</h3>
-    <p class="border-b border-gray-200 p-2">{{ when }}</p>
-    <p class="p-2">{{ description }}</p>
+    <SectionCard >
+     <template #header>
+      {{ title }}
+     </template>
 
-    <section class="flex justify-end">
-      <RoundButton label="Register"  @click="$emit('register')" >
-        <pre>Register</pre>
-      </RoundButton>
-    </section>
-  </div>
+     {{ when }}
+
+     <template #footer>
+       <p class="p-2">{{ description }}</p>
+
+       <div class="flex justify-end">
+         <RoundButton label="Register"  @click="$emit('register')" >
+           <pre>Register</pre>
+         </RoundButton>
+       </div>
+     </template>
+  </SectionCard>
 </template>
 
 <script setup>
 
 import RoundButton from '@/components/RoundButton.vue'
+ import SectionCard from './SectionCard.vue';
 
-defineEmits(['register']);
 
 
 defineProps({
@@ -24,6 +30,8 @@ defineProps({
   when: String,
   description: String,
 });
+
+defineEmits(['register']);
 
 </script>
 

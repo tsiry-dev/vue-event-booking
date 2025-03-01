@@ -1,0 +1,83 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Vue.js Conference",
+      "date": "2025-04-15",
+      "description": "A conference about the latest in Vue.js development.",
+      "location": "Paris, France"
+    },
+    {
+      "id": 2,
+      "title": "React Summit",
+      "date": "2025-05-20",
+      "description": "Join us for a day of React talks and workshops.",
+      "location": "Berlin, Germany"
+    },
+    {
+      "id": 3,
+      "title": "Angular Connect",
+      "date": "2025-06-10",
+      "description": "The premier conference for Angular developers.",
+      "location": "London, UK"
+    },
+    {
+      "id": 4,
+      "title": "JavaScript World",
+      "date": "2025-07-25",
+      "description": "Explore the latest trends in JavaScript development.",
+      "location": "New York, USA"
+    },
+    {
+      "id": 5,
+      "title": "Web Dev Summit",
+      "date": "2025-08-30",
+      "description": "A summit for web developers to share knowledge and network.",
+      "location": "San Francisco, USA"
+    },
+    {
+      "id": 6,
+      "title": "Tech Expo",
+      "date": "2025-09-15",
+      "description": "An expo showcasing the latest in tech.",
+      "location": "Tokyo, Japan"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1740850508600",
+      "userId": 1,
+      "eventId": 3,
+      "evenTitle": "Angular Connect",
+      "status": "confirmed"
+    },
+    {
+      "id": "1740850767889",
+      "userId": 1,
+      "eventId": 1,
+      "evenTitle": "Vue.js Conference",
+      "status": "confirmed"
+    },
+    {
+      "id": "1740850809522",
+      "userId": 1,
+      "eventId": 1,
+      "eventTitle": "Vue.js Conference",
+      "status": "confirmed"
+    },
+    {
+      "id": "1740851088210",
+      "userId": 1,
+      "eventId": 1,
+      "evenTitle": "Vue.js Conference",
+      "status": "confirmed"
+    },
+    {
+      "id": "1740852495814",
+      "userId": 1,
+      "eventId": 1,
+      "evenTitle": "Vue.js Conference",
+      "status": "confirmed"
+    }
+  ]
+}
